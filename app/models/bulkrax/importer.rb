@@ -89,8 +89,7 @@ module Bulkrax
       self.parser_fields['replace_files']
     end
 
-    def import_works(only_updates = false)
-      self.only_updates = only_updates
+    def import_works
       parser.create_works
       status_info
     rescue StandardError => e
